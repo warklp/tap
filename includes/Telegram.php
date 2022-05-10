@@ -1040,10 +1040,8 @@ class Telegram
     /// Get the number of updates
     public function UpdateCount()
     {
-        return 
-      $pkCount = (is_array($this->updates['result']) ? count($this->updates['result']) : 0); if ($pkCount == 0)
-
-    }
+        return $pkCount = (is_array($this->updates['result']) ? count($this->updates['result']) : 0); if ($pkCount == 0)
+ }
 
     /// Get user's id of current message
     public function UserID()
