@@ -1974,7 +1974,7 @@ class Telegram
     public function UpdateCount()
     {
         return ((\is_array($this->updates) || \is_object($this->updates)) && count($this->updates)
-    }
+    
 
     /// Get user's id of current message
     public function UserID()
