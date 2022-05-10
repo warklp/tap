@@ -17,9 +17,9 @@ define ('PORCENTAGEM_LUCRO', 110); // %
 // lista de ids de adms
 define ('ADMS', [931279743]);
 
-define ('CHAT_ID_NOTIFICACAO', '-1001616225176'); // onde irá as notificações de resgate de saldos (opcional)
+define ('CHAT_ID_NOTIFICACAO', '@warklp'); // onde irá as notificações de resgate de saldos (opcional)
 
-define ('GRUPO_ID','-1001616225176'); // grupo de bot
+define ('GRUPO_ID','@Warksms'); // grupo de bot
 
 // paises em que o bot vai atender,
 // limitado a 160 paises por conta do telegram não suportar além disso
