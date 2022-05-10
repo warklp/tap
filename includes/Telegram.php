@@ -3067,7 +3067,8 @@ class Telegram
         $content = ['offset' => $offset, 'limit' => $limit, 'timeout' => $timeout];
         $this->updates = $this->endpoint('getUpdates', $content);
         if ($update) {
-            $pkCount = (is_array($this->updates['result']) ? count($this->documents) : 0); if ($pkCount => 1) { //for CLI working.
+		if (count($this->updates['result']) >= 1) { //for CLI working.
+//            $pkCount = (is_array($this->updates['result']) ? count($this->documents) : 0); if ($pkCount => 1) { //for CLI working.
                 $last_element_id = $this->updates['result'][count($this->updates['result']) - 1]['update_id'] + 1;
                 $content = ['offset' => $last_element_id, 'limit' => '1', 'timeout' => $timeout];
                 $this->endpoint('getUpdates', $content);
