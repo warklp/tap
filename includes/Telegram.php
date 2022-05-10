@@ -3069,7 +3069,7 @@ class Telegram
         if ($update) {
    //         if (count($this->updates['result']) >= 1) { //for CLI working.
             if ((\is_array($this->updates) || \is_object($this->updates)) && count($this->updates) > 0) {
-                $last_element_id = $this->updates [((\is_array($this->updates) || \is_object($this->updates)) && count($this->updates) - 1]['update_id'] + 1;
+                $last_element_id = $this->updates ((\is_array($this->updates) || \is_object($this->updates)) && count($this->updates) - 1['update_id'] + 1;
     //  $last_element_id = $this->updates [count($this->updates) - 1]['update_id'] + 1;
                 $content = ['offset' => $last_element_id, 'limit' => '1', 'timeout' => $timeout];
                 $this->endpoint('getUpdates', $content);
